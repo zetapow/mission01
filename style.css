@@ -1,4 +1,5 @@
 :root {
+   --font-family: 'Roboto';
    /* Microsoft Teams color codes  https://www.brandcolorcode.com/microsoft-teams*/
    --dark-blue: #3d45af;
    --blue: #5059c9;
@@ -7,7 +8,7 @@
 }
 
 body {
-   font-family: 'Roboto';
+   font-family: var(--font-family);
 }
 
 footer {
