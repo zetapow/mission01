@@ -18,32 +18,108 @@
          crossorigin="anonymous"
          referrerpolicy="no-referrer" />
       <title>Peter Zhou</title>
-      <link rel="icon" href="parking-solid.svg" />
+      <link rel="icon" href="images/parking-solid.svg" />
    </head>
 
-   <!-- HTML  
-   
-   <h1> tags  
-   <p> tags  
-   <img> tags  
-   Email Contact Form  
-   
-   CSS  
-   
-   Flexbox  
-   Background Stylisation of <Body> or <div>  
-   Margins  
-   Width & Height  
-   Animations   -->
-
    <body>
-      <header>Navigation links</header>
+      <header>
+         <nav class="nav">
+            <a href="#"><h1>PZ</h1></a>
+            <ul>
+               <li><a href="#about">About Me</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
 
-      <div class="container"><section id="projects">Projects</section></div>
-      <div class="container"><section id="about">About Me</section></div>
-      <div class="container"><section id="contact">Contact Me</section></div>
+      <div class="container">
+         <section id="about">
+            <h1>About Me</h1>
+            <p class="about-text">
+               Learning full stack development at Mission Ready.
+               <br />
+               <br />
+               Interested in onebag travel and all things tech.
+               <br />
+               <br />
+               Based in Auckland, New Zealand
+            </p>
+         </section>
+      </div>
+
+      <div class="container">
+         <section id="projects">
+            <h1>Projects</h1>
+            <div class="project">
+               <h2>3D printing</h2>
+               <img
+                  src="images/prusa_mini.jpg"
+                  alt="3d printer"
+                  title="Prusa Mini" />
+               <img
+                  src="images/bambup1s.jpg"
+                  alt="corexy printer"
+                  title="Bambu Lab P1S" />
+            </div>
+            <div class="project">
+               <h2>Mechanical keyboards</h2>
+               <img
+                  src="images/freebird60.jpg"
+                  alt="mechanical keyboard 60%"
+                  title="Freebird 60" />
+
+               <img
+                  src="images/qk60.png"
+                  alt="mechanical keyboard hhkb"
+                  title="Qwertkeys QK60" />
+            </div>
+            <div class="project">
+               <h2>Web Development</h2>
+               <p>More to come</p>
+            </div>
+         </section>
+      </div>
+
+      <div class="container">
+         <section id="contact">
+            <h1>Get in touch</h1>
+            <form action="#" method="GET" class="form">
+               <div class="form">
+                  <label for="name">Name:</label>
+                  <input
+                     type="text"
+                     id="name"
+                     name="name"
+                     placeholder="Enter your name"
+                     required />
+               </div>
+               <div class="form">
+                  <label for="email">Email</label>
+                  <input
+                     type="email"
+                     name="email"
+                     id="email"
+                     placeholder="Enter your email"
+                     required />
+               </div>
+               <div class="form">
+                  <label for="message">Message:</label>
+                  <textarea
+                     name="message"
+                     id="message"
+                     placeholder="Type your message here"
+                     rows="3"></textarea>
+               </div>
+               <div class="form">
+                  <button type="submit" id="submit">Submit</button>
+               </div>
+            </form>
+         </section>
+      </div>
+
       <footer>
-         <div class="copyright">
+         <div class="footer">
             <small>©2025 Peter Zhou</small>
             <ul>
                <li>
