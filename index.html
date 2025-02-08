@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="css/style.css" />
 
       <!-- Fonts and Icons -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,10 +22,18 @@
    </head>
 
    <body>
-      <header>
-         <nav class="nav">
-            <a href="#"><h1>PZ</h1></a>
+      <header class="header">
+         <a href="#" class="logo-left">P<span class="logo-text">Z</span></a>
+         <nav>
+            <a href="#" class="open-nav hide-desktop">
+               <img src="images/menu.svg" alt="open nav " />
+            </a>
             <ul>
+               <li class="hide-desktop">
+                  <a href="#" class="close-nav"
+                     ><img src="images/close.svg" alt="close nav"
+                  /></a>
+               </li>
                <li><a href="#about">About Me</a></li>
                <li><a href="#projects">Projects</a></li>
                <li><a href="#contact">Contact</a></li>
@@ -33,8 +41,8 @@
          </nav>
       </header>
 
-      <div class="container">
-         <section id="about">
+      <main class="wrapper">
+         <div class="container" id="about">
             <h1>About Me</h1>
             <p class="about-text">
                Learning full stack development at Mission Ready.
@@ -45,44 +53,45 @@
                <br />
                Based in Auckland, New Zealand
             </p>
-         </section>
-      </div>
+         </div>
 
-      <div class="container">
-         <section id="projects">
+         <div class="container" id="projects">
             <h1>Projects</h1>
             <div class="project">
                <h2>3D printing</h2>
                <img
                   src="images/prusa_mini.jpg"
                   alt="3d printer"
-                  title="Prusa Mini" />
+                  title="Prusa Mini"
+                  class="project-image" />
+
                <img
                   src="images/bambup1s.jpg"
                   alt="corexy printer"
-                  title="Bambu Lab P1S" />
+                  title="Bambu Lab P1S"
+                  class="project-image" />
             </div>
             <div class="project">
                <h2>Mechanical keyboards</h2>
                <img
                   src="images/freebird60.jpg"
                   alt="mechanical keyboard 60%"
-                  title="Freebird 60" />
+                  title="Freebird 60"
+                  class="project-image" />
 
                <img
                   src="images/qk60.png"
                   alt="mechanical keyboard hhkb"
-                  title="Qwertykeys QK60" />
+                  title="Qwertykeys QK60"
+                  class="project-image" />
             </div>
             <div class="project">
                <h2>Web Development</h2>
                <p>More to come</p>
             </div>
-         </section>
-      </div>
+         </div>
 
-      <div class="container">
-         <section id="contact">
+         <div class="container" id="contact">
             <h1>Get in touch</h1>
             <form action="#" method="GET" class="form">
                <div class="form">
@@ -112,44 +121,51 @@
                      rows="3"></textarea>
                </div>
                <div class="form">
-                  <button type="submit" id="submit">Submit</button>
+                  <button class="submit-button" type="submit" id="submit">
+                     Submit
+                  </button>
                </div>
             </form>
-         </section>
-      </div>
+         </div>
+      </main>
 
       <footer>
          <div class="footer">
             <div class="copyright"><small>©2025 Peter Zhou</small></div>
-            <div class="links">
-               <ul>
-                  <li>
-                     <a
-                        href="https://www.facebook.com"
-                        target="_blank"
-                        class="btn-social"
-                        ><i class="fa-brands fa-facebook"></i
-                     ></a>
-                  </li>
-                  <li>
-                     <a
-                        href="https://www.linkedin.com/in/peter-zhou-25709a1b/"
-                        target="_blank"
-                        class="btn-social"
-                        ><i class="fa-brands fa-linkedin-in"></i
-                     ></a>
-                  </li>
-                  <li>
-                     <a
-                        href="https://github.com/zetapow"
-                        target="_blank"
-                        class="btn-social"
-                        ><i class="fa-brands fa-github"></i
-                     ></a>
-                  </li>
-               </ul>
-            </div>
+            <ul class="footer-links">
+               <li>
+                  <a
+                     href="https://www.linkedin.com/in/peter-zhou-25709a1b/"
+                     target="_blank"
+                     class="btn-social"
+                     ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+               </li>
+               <li>
+                  <a
+                     href="https://github.com/zetapow"
+                     target="_blank"
+                     class="btn-social"
+                     ><i class="fa-brands fa-github"></i
+                  ></a>
+               </li>
+            </ul>
          </div>
       </footer>
+
+      <script>
+         // toggle nav button
+         const navMenu = document.querySelector('nav ul');
+         const openNav = document.querySelector('.open-nav');
+         const closeNav = document.querySelector('.close-nav');
+
+         openNav.addEventListener('click', () => {
+            // alert('It worked');
+            navMenu.classList.add('open');
+         });
+         closeNav.addEventListener('click', () => {
+            navMenu.classList.remove('open');
+         });
+      </script>
    </body>
 </html>
