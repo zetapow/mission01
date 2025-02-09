@@ -24,7 +24,9 @@
    <body>
       <header>
          <nav class="nav">
-            <a href="#"><h1>PZ</h1></a>
+            <a href="#"
+               ><h1 id="logo">P <span> Z</span></h1></a
+            >
             <ul>
                <li><a href="#about">About Me</a></li>
                <li><a href="#projects">Projects</a></li>
@@ -32,91 +34,92 @@
             </ul>
          </nav>
       </header>
+      <main>
+         <div class="container">
+            <section id="about">
+               <h1>About Me</h1>
+               <p class="about-text">
+                  Learning full stack development at Mission Ready.
+                  <br />
+                  <br />
+                  Interested in onebag travel and all things tech.
+                  <br />
+                  <br />
+                  Based in Auckland, New Zealand
+               </p>
+            </section>
+         </div>
 
-      <div class="container">
-         <section id="about">
-            <h1>About Me</h1>
-            <p class="about-text">
-               Learning full stack development at Mission Ready.
-               <br />
-               <br />
-               Interested in onebag travel and all things tech.
-               <br />
-               <br />
-               Based in Auckland, New Zealand
-            </p>
-         </section>
-      </div>
+         <div class="container">
+            <section id="projects">
+               <h1>Projects</h1>
+               <div class="project">
+                  <h2>3D printing</h2>
+                  <img
+                     src="images/prusa_mini.jpg"
+                     alt="3d printer"
+                     title="Prusa Mini" />
+                  <img
+                     src="images/bambup1s.jpg"
+                     alt="corexy printer"
+                     title="Bambu Lab P1S" />
+               </div>
+               <div class="project">
+                  <h2>Mechanical keyboards</h2>
+                  <img
+                     src="images/freebird60.jpg"
+                     alt="mechanical keyboard 60%"
+                     title="Freebird 60" />
 
-      <div class="container">
-         <section id="projects">
-            <h1>Projects</h1>
-            <div class="project">
-               <h2>3D printing</h2>
-               <img
-                  src="images/prusa_mini.jpg"
-                  alt="3d printer"
-                  title="Prusa Mini" />
-               <img
-                  src="images/bambup1s.jpg"
-                  alt="corexy printer"
-                  title="Bambu Lab P1S" />
-            </div>
-            <div class="project">
-               <h2>Mechanical keyboards</h2>
-               <img
-                  src="images/freebird60.jpg"
-                  alt="mechanical keyboard 60%"
-                  title="Freebird 60" />
+                  <img
+                     src="images/qk60.png"
+                     alt="mechanical keyboard hhkb"
+                     title="Qwertykeys QK60" />
+               </div>
+               <div class="project">
+                  <h2>Web Development</h2>
+                  <p>More to come</p>
+               </div>
+            </section>
+         </div>
 
-               <img
-                  src="images/qk60.png"
-                  alt="mechanical keyboard hhkb"
-                  title="Qwertykeys QK60" />
-            </div>
-            <div class="project">
-               <h2>Web Development</h2>
-               <p>More to come</p>
-            </div>
-         </section>
-      </div>
-
-      <div class="container">
-         <section id="contact">
-            <h1>Get in touch</h1>
-            <form action="#" method="GET" class="form">
-               <div class="form">
-                  <label for="name">Name: </label>
-                  <input
-                     type="text"
-                     id="name"
-                     name="name"
-                     placeholder="Enter your name"
-                     required />
-               </div>
-               <div class="form">
-                  <label for="email">Email: </label>
-                  <input
-                     type="email"
-                     name="email"
-                     id="email"
-                     placeholder="Enter your email"
-                     required />
-               </div>
-               <div class="form">
-                  <label for="message">Message: </label>
-                  <textarea
-                     name="message"
-                     id="message"
-                     placeholder="Type your message here"
-                     rows="3"></textarea>
-               </div>
-               <div class="form">
-                  <button type="submit" id="submit">Submit</button>
-               </div>
-            </form>
-         </section>
-      </div>
+         <div class="container">
+            <section id="contact">
+               <h1>Get in touch</h1>
+               <form action="#" method="GET" class="form">
+                  <div class="form">
+                     <label for="name">Name: </label>
+                     <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required />
+                  </div>
+                  <div class="form">
+                     <label for="email">Email: </label>
+                     <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required />
+                  </div>
+                  <div class="form">
+                     <label for="message">Message: </label>
+                     <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Type your message here"
+                        rows="3"></textarea>
+                  </div>
+                  <div class="form">
+                     <button type="submit" id="submit">Submit</button>
+                  </div>
+               </form>
+            </section>
+         </div>
+      </main>
 
       <footer>
          <div class="footer">

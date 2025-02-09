@@ -62,3 +62,7 @@ ul li {
 .container {
    margin: 50px 20px;
 }
+
+#logo > span {
+   color: var(--light-blue);
+}
