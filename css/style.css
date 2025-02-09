@@ -1,0 +1,182 @@
+/* Reset margins and padding */
+* {
+   padding: 0;
+   margin: 0;
+}
+
+/* Set fonts and colour variables */
+:root {
+   --font-family: 'Roboto';
+   --alice-blue: #f0f8ff;
+   /* Microsoft Teams color codes  https://www.brandcolorcode.com/microsoft-teams*/
+   --dark-blue: #3d45af;
+   --blue: #5059c9;
+   --light-blue: #7b83eb;
+   --white: #ffffff;
+}
+
+body {
+   background-color: var(--alice-blue);
+   font-family: var(--font-family);
+}
+
+h1,
+h2,
+p {
+   text-align: center;
+}
+
+h2 {
+   font-weight: 400;
+}
+
+p {
+   font-size: 1.1em;
+   line-height: 1.25;
+}
+
+label {
+   display: block;
+   font-size: 1.1em;
+   margin-bottom: 0.25em;
+}
+
+input,
+textarea {
+   box-sizing: border-box;
+   width: 100%;
+   padding: 0.5em;
+   margin-bottom: 1em;
+   border-radius: 0.35em;
+}
+
+nav ul {
+   background: var(--white);
+   position: fixed;
+   list-style: none;
+   z-index: 999;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 30%;
+   text-align: right;
+   padding: 1em;
+   transform: translateY(100%);
+   /* transition: transform 1s ease-in-out; */
+   transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+   li {
+      margin: 1em 0;
+
+      a {
+         color: var(--dark-blue);
+         font-weight: bold;
+         font-size: 1.5rem;
+         text-decoration: none;
+         transition: color 1s;
+
+         &:hover {
+            color: orange;
+            text-decoration: underline;
+         }
+      }
+   }
+}
+
+/* Class styling */
+
+.open {
+   transform: translateY(0%);
+}
+
+.logo-left {
+   text-decoration: none;
+   font-size: x-large;
+   font-weight: bold;
+}
+.logo-text {
+   color: var(--light-blue);
+}
+
+.wrapper {
+   margin: 1em;
+}
+.container {
+   margin: 50px 20px;
+}
+
+.header {
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.project-image {
+   display: block;
+   max-width: 400px;
+   img {
+      width: 75%;
+      height: auto;
+   }
+}
+
+.submit-button {
+   background-color: var(--dark-blue);
+   color: var(--white);
+   padding: 1em;
+   border-radius: 0.75em;
+   display: block;
+   box-sizing: border-box;
+   width: 100%;
+   text-align: center;
+   font-weight: bold;
+   font-size: 1.25rem;
+}
+
+.copyright {
+   font-weight: 500;
+}
+
+.footer {
+   background-color: var(--light-blue);
+   text-align: center;
+   padding: 5px 0px;
+}
+
+.footer-links {
+   list-style: none;
+   display: flex;
+   padding: 5px;
+   justify-content: center;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+   .hide-desktop {
+      display: none;
+   }
+
+   nav ul {
+      position: unset;
+      background: none;
+      display: flex;
+      gap: 3em;
+      height: auto;
+      width: auto;
+      transform: translateX(0%);
+   }
+}
+
+@media (min-width: 1080px) {
+   h1,
+   h2,
+   p {
+      text-align: left;
+   }
+
+   main {
+      width: 50%;
+      transform: translateX(50%);
+   }
+}
