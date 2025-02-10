@@ -131,6 +131,11 @@ nav ul {
    min-width: 100px;
    max-width: 500px;
    height: auto;
+   transition: transform 0.25s;
+
+   &:hover {
+      transform: scale(1.25);
+   }
 }
 
 .submit-button {
