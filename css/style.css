@@ -194,6 +194,8 @@ nav ul {
    }
 
    main {
+      display: flex;
+      flex-wrap: wrap;
       width: 50%;
       transform: translateX(50%);
    }
