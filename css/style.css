@@ -118,6 +118,10 @@ nav ul {
 
 .project {
    margin: 2em 0 3em 0;
+   /* display: flex; */
+   /* keeb {
+      display: flex;
+   } */
 }
 
 .project-image {
