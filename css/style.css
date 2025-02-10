@@ -86,6 +86,8 @@ nav ul {
 /* Class styling */
 
 .header {
+   position: sticky;
+   top: 0;
    background-color: var(--white);
 }
 
@@ -118,10 +120,8 @@ nav ul {
 
 .project {
    margin: 2em 0 3em 0;
-   /* display: flex; */
-   /* keeb {
-      display: flex;
-   } */
+   /* display: flex;
+   justify-content: space-around; */
 }
 
 .project-image {
