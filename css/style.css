@@ -85,6 +85,10 @@ nav ul {
 
 /* Class styling */
 
+.header {
+   background-color: var(--white);
+}
+
 .open {
    transform: translateY(0%);
 }
@@ -113,12 +117,12 @@ nav ul {
 }
 
 .project-image {
-   display: block;
-   max-width: 400px;
-   img {
-      width: 75%;
-      height: auto;
-   }
+   /* display: flex; */
+   align-items: center;
+   width: 100%;
+   min-width: 100px;
+   max-width: 500px;
+   height: auto;
 }
 
 .submit-button {
@@ -132,6 +136,12 @@ nav ul {
    text-align: center;
    font-weight: bold;
    font-size: 1.25rem;
+   transition: 200ms ease-in-out;
+}
+
+.submit-button:hover {
+   background-color: var(--white);
+   color: var(--dark-blue);
 }
 
 .copyright {
