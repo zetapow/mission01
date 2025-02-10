@@ -85,6 +85,12 @@ nav ul {
 
 /* Class styling */
 
+.header {
+   position: sticky;
+   top: 0;
+   background-color: var(--white);
+}
+
 .open {
    transform: translateY(0%);
 }
@@ -112,13 +118,19 @@ nav ul {
    justify-content: space-between;
 }
 
+.project {
+   margin: 2em 0 3em 0;
+   /* display: flex;
+   justify-content: space-around; */
+}
+
 .project-image {
-   display: block;
-   max-width: 400px;
-   img {
-      width: 75%;
-      height: auto;
-   }
+   display: flex;
+   margin: 1em auto 1em auto;
+   width: 100%;
+   min-width: 100px;
+   max-width: 500px;
+   height: auto;
 }
 
 .submit-button {
@@ -132,6 +144,12 @@ nav ul {
    text-align: center;
    font-weight: bold;
    font-size: 1.25rem;
+   transition: 400ms ease-in-out;
+}
+
+.submit-button:hover {
+   background-color: var(--white);
+   color: var(--dark-blue);
 }
 
 .copyright {
@@ -176,6 +194,8 @@ nav ul {
    }
 
    main {
+      display: flex;
+      flex-wrap: wrap;
       width: 50%;
       transform: translateX(50%);
    }
