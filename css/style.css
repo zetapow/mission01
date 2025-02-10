@@ -116,9 +116,13 @@ nav ul {
    justify-content: space-between;
 }
 
+.project {
+   margin: 2em 0 3em 0;
+}
+
 .project-image {
-   /* display: flex; */
-   align-items: center;
+   display: flex;
+   margin: 1em auto 1em auto;
    width: 100%;
    min-width: 100px;
    max-width: 500px;
@@ -136,7 +140,7 @@ nav ul {
    text-align: center;
    font-weight: bold;
    font-size: 1.25rem;
-   transition: 200ms ease-in-out;
+   transition: 400ms ease-in-out;
 }
 
 .submit-button:hover {
