@@ -109,6 +109,9 @@ nav ul {
 }
 .container {
    margin: 50px 20px;
+   border: 2px ridge var(--light-blue);
+   padding: 10%;
+   border-radius: 25px;
 }
 
 .header {
@@ -134,7 +137,7 @@ nav ul {
    transition: transform 0.25s;
 
    &:hover {
-      transform: scale(1.25);
+      transform: scale(1.15);
    }
 }
 
