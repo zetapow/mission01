@@ -148,6 +148,16 @@ nav ul {
    }
 }
 
+.dropdown {
+   opacity: 0;
+   visibility: hidden;
+}
+
+.form:focus-within .dropdown {
+   opacity: 1;
+   visibility: visible;
+}
+
 .submit-button {
    background-color: var(--dark-blue);
    color: var(--white);
@@ -167,7 +177,8 @@ nav ul {
    }
 }
 
-.submit-button .copyright {
+.submit-button,
+.copyright {
    font-weight: 500;
 }
 
