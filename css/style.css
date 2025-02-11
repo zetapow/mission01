@@ -48,6 +48,13 @@ textarea {
    padding: 0.5em;
    margin-bottom: 1em;
    border-radius: 0.35em;
+
+   &:focus {
+      color: var(--dark-blue);
+      caret-color: var(--dark-blue);
+      accent-color: var(--dark-blue);
+      outline-color: var(--dark-blue);
+   }
 }
 
 nav ul {
