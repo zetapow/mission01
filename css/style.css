@@ -153,14 +153,14 @@ nav ul {
    font-weight: bold;
    font-size: 1.25rem;
    transition: 400ms ease-in-out;
+
+   &:hover {
+      background-color: var(--white);
+      color: var(--dark-blue);
+   }
 }
 
-.submit-button:hover {
-   background-color: var(--white);
-   color: var(--dark-blue);
-}
-
-.copyright {
+.submit-button .copyright {
    font-weight: 500;
 }
 
